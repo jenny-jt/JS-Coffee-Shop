@@ -43,7 +43,6 @@ $('.add-to-order').on('click', () => {
   incrementCartTotal(1.50)});
 
 $('#place-order').on('click', () => {
+  resetCart;
   incrementCoffeeSold($('#cart-items').children().length);
-  resetCart();
 });
-
